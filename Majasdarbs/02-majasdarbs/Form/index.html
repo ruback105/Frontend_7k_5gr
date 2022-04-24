@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and inputs birkas</title>
+</head>
+<body>
+    <header>
+        <h2>Reģistrācijas forma</h2>
+      <form action="" method="get">
+        <fieldset>
+          <label for="name">Vards:</label>
+          <input type="text" name="name" id="name" required>
+          <label for="lastname">Uzvārds:</label>
+          <input type="text" name="lastname" id="lastname" required>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Informācija par sevi</legend>
+          <h4>Dzimums</h4>
+            <input type="radio" id="Vīrietis" name="dzimums" value="Vīrietis">
+            <label>Vīrietis</label><br>
+            <input type="radio" id="Sieviete" name="dzimums" value="Sieviete">
+            <label>Sieviete</label><br>
+            <br>
+            <label for="date">Dzimšanas datums:</label>
+            <input type="date">
+            <br>
+            <h4>Adrese</h4>
+                <label for="city-select">Jūsu pilseta</label>
+                <select name="city" id="city-select">
+                  <optgroup label="Latvija">
+                    <option value="riga">Riga</option>
+                    <option value="jelgava">Jelgava</option>
+                </select>
+                <br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Jūsu hobbies</legend>
+                <h4>Jūs varat izvēlēties jebkuru hobiju skaitu</h4>
+                  <input type="checkbox" id="Ceļojumi" name="Ceļojumi" value="Ceļojumi">
+                  <label>Ceļojumi</label>
+                  <input type="checkbox" id="Programmēšana" name="Programmēšana" value="Programmēšana">
+                  <label>Programmēšana</label><br>
+                  <input type="checkbox" id="Zīmēt" name="Zīmēt" value="Zīmēt">
+                  <label>Zīmēt</label>
+                  <input type="checkbox" id="Spēlēt mūzikas instrumentus" name="Spēlēt mūzikas instrumentus" value="Spēlēt mūzikas instrumentus">
+                  <label>Spēlēt mūzikas instrumentus</label><br>
+                  
+                  <br>
+            </fieldset>
+            <fieldset>
+                <legend>Laika iedaļa</legend>
+                <br>
+                <label>Laiks</label>
+                <input type="time">
+                <br>
+                <br>
+            </fieldset>
+            <br>
+          <button type="submit">Sūtī</button>
+        <br>
+    </header>
+    
+</body>
+</html>

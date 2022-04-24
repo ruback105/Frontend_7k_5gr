@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!-- form -->
+<hr>
+<h2>Reģistrācijas forma</h2>
+<form action="" method="get">
+    <fieldset>
+        <label for="name">Ievietot vārdu:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="password">Ievietot paroli</label>
+        <input type="password" name="password" id="password" required>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Informācija par sevi</legend>
+        <style>
+            fieldset {
+                background-color: #ffffff;
+            }
+
+            legend {
+                background-color: yellow;
+                color: black;
+                padding: 5px 10px;
+            }
+
+            input {
+                margin: 5px;
+            }
+        </style>
+        </head>
+
+        <body>
+            <br>
+            <label for="Dzimums"><b>Dzimums</b /label>
+                <br>
+                <br>
+                <input type="radio">Vīrietis
+                <br>
+                <input type="radio">Sieviete
+                <br><br>
+                <label for="Dzimšanas datums">Dzimšanas datums</label>
+                <input type="date">
+                <br><br>
+                <label for="adrese"><b>Adrese</b></label>
+                <br><br>
+                <form action="/action_page.php" method="get">
+                    <label for="pilseta">Jūsu pilsēta</label>
+                    <input list="pilseta" name="pilseta id=" pilseta">
+                    <datalist id="pilseta">
+                        <option value="Rīga">
+                        <option value="Ventspils">
+                        <option value="Valmiera">
+                        <option value="Liepāja">
+                        <option value="Daugavpils">
+                    </datalist>
+                </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Jūsu hobiji</legend>
+        <label for="hobiji">Jūs varat izvēlēties jebkuru hobiju skaitu</label>
+        <br>
+        <input type="checkbox">Ceļojumi
+        <input type="checkbox">Programmēšana
+        <br>
+        <input type="checkbox">Zīmēt
+        <input type="checkbox">Spēlēt mūzikas instrumentu
+        <br>
+        <label for="Textbox">Ierakstiet savu variantu</label>
+        <input type="text" id="fname" name="fname" size="40">
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Izvēlieties savu mīļāko krāsu</legend>
+        <label for="color"><b>Spied šeit:</b></label>
+        <input type="color">
+    </fieldset>
+    <br>
+    <input type="button" value="Sūtīt">
+    <br>
+</form>
+<!-- /form -->
+</article>
+</body>
+
+</html>

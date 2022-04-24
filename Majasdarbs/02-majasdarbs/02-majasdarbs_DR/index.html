@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h2>Reģistrācijas forma</h2>
+
+</body>
+</html>
+    <action="" method="get">
+        <fieldset>
+
+            <form action="/action_page.php">
+                <label for="name">Ievietot vārdu:</label>
+                <input type="text" id="name" name="name">
+                <label for="password">Ievietot paroli:</label>
+                <input type="text" id="password" name="password">
+        </fieldset>
+        <fieldset>
+            <legend><p style="background-color:yellow;">Informācija par sevi</p></legend>
+            <h3>Dzimums</h3>
+
+            <form action="/action_page.php">
+              <input type="radio" id="vīrietis" name="dzimums" value="vīrietis">
+              <label for="html">vīrietis</label><br>
+              <input type="radio" id="sieviete" name="dzimums" value="sieviete">
+              <label for="sieviete">sieviete</label><br>
+                <br>
+            <label for="Date">dzimšanas datums</label>
+            <input type="Date" name="Date" id="dzimums" required>
+             <h3>Adrese</h3>
+
+                <label for="list">Jūsu pilsēta</label>
+                <select name="list" id="list">
+                  <option value="Rīga">Rīga</option>
+                  <option value="Jelgava">Jelgava</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend><p style="background-color:yellow;">Jūsu hobji</p></legend>
+             <br>Jūs varat izvēlēties jebkuru hobiju skaitu
+             <br>
+               <input type="checkbox" id="Ceļojumi" name="Ceļojumi">
+               <label for="Ceļojumi">Ceļojumi</label>
+               <input type="checkbox" id="Programmēšana" name="Programmēšana">
+               <label for="Programmēšana">Programmēšana</label>
+             <br>
+               <input type="checkbox" id="Zīmēt" name="Zīmēt">
+               <label for="Zīmēt">Zīmēt</label>
+               <input type="checkbox" id="Spēlēt mūzikas instrumentus" name="Spēlēt mūzikas instrumentus">
+               <label for="Spēlēt mūzikas instrumentus">Spēlēt mūzikas instrumentus</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><p style="background-color:yellow;">Savs laukums</p></legend>
+               <h4>Kāda ir Jūsu izglītība?</h4>
+<form action="/action_page.php" method="get">
+  <label for="browser">Izvēlieties no saraksta:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="vidējā">
+    <option value="nepabeigta augstākā">
+    <option value="augstākā">
+    <option value="maģistra grāds">
+  </datalist>
+  <input type="submit">
+</form>
+</body>
+</html>

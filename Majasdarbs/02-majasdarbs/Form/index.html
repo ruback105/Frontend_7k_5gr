@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Input</legend>
+        <label for="name">Vards:</label>
+        <input type="text" name="name" id="name" required />
+
+        <input type="checkbox" name="" id="" />
+        <input type="password" name="" id="" />
+        <input type="date" name="" id="" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend style="background-color: yellow">Textarea</legend>
+        <label for="story">Par mani:</label>
+        <textarea id="story" name="story" rows="5" cols="33">
+Frontend developer</textarea
+        >
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Button</legend>
+        <button type="submit">Send</button>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Select</legend>
+        <label for="city-select">Pilseta</label>
+        <select name="city" id="city-select">
+          <optgroup label="Latvija">
+            <option value="riga">Riga</option>
+            <option value="jelgava">Jelgava</option>
+          </optgroup>
+          <optgroup label="USA">
+            <option value="New York">New York</option>
+            <option value="Chicago">Chicago</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Datalist</legend>
+        <label for="my-browser">Browser from list:</label>
+        <input list="browsers" id="my-browser" name="my-browser" />
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Yandex Browser"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+          <option value="Microsoft Edge"></option>
+        </datalist>
+      </fieldset>
+    </form>
+  </body>
+</html>

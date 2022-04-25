@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 class="title">Reģistrācijas forma</h1>
+    <form action="">
+      <fieldset>
+        <table>
+          <tr>
+            <td>
+              <label for="name">Ievieto lietotājvārdu:</label>
+              <input required type="text" />
+            </td>
+            <td>
+              <label for="name">Ievieto paroli:</label>
+              <input
+                required
+                minlength="6"
+                type="password"
+                placeholder="Vismaz 6 zīmes"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><mark>Informācija par sevi</mark></legend>
+        <h4>Dzimums</h4>
+        <input type="radio" name="dzimums" value="male" required /> Vīrietis
+        <br />
+        <input type="radio" name="dzimums" value="female" required /> Sieviete
+        <br />
+        <br />
+        <label for="date"> Dzimšanas datums:</label>
+        <input required type="date" />
+        <br />
+        <h4>Adrese</h4>
+        <label>Jūsu pilsēta</label>
+        <select required>
+          <optgroup label="Latvija">
+            <option></option>
+            <option>Rīga</option>
+            <option>Jelgava</option>
+            <option>Preiļi</option>
+            <option>Liepāja</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><mark>Jūsu hobiji</mark></legend>
+        <p><i>Jūs varat izvēlēties jebkuru hobiju skaitu</i></p>
+        <table>
+          <tr>
+            <td><input type="checkbox" /> Ceļojumi</td>
+            <td><input type="checkbox" /> Programmēšana</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /> Zīmēšana</td>
+            <td><input type="checkbox" /> Spēlēt mūzikas instrumentus</td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><mark>Informācija par sevi</mark></legend>
+        <textarea
+          placeholder="Līdz 30 rakstu zīmēm"
+          name="teksts"
+          cols="30"
+          rows="10"
+        >
+        </textarea>
+      </fieldset>
+      <br />
+      <button class="button">SŪTĪT</button>
+    </form>
+  </body>
+</html>
+
+<style>
+  fieldset {
+    background-color: antiquewhite;
+    border-color: #fcd188;
+    box-shadow: 0 2px #fcd188;
+    border-radius: 10px;
+  }
+
+  .button {
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 6px #efa424;
+    background-color: #f7c369;
+    padding: 10px 50px;
+    color: #fff;
+    letter-spacing: 4px;
+    width: 40%;
+  }
+  .title {
+    font-family: sans-serif;
+    color: #f7c369;
+    text-shadow: 0 2px #efa424;
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reģistrācijas Forma</title>
+</head>
+
+
+<body>
+    <h3>Registracijas Forma</h3>
+    <action="" method="get">
+        <fieldset>
+
+            <label for="name">Ievietot vārdu:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="password">Ievietot paroli:</label>
+            <input type="password" name="password" id="password" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><p style="background-color:yellow;">Informācija par sevi</p></legend>
+            <label for="dzimums">
+                <h4>Dzimums</h4>
+            </label>
+            <input type="radio" name="Vīrietis" id="dzimums" required>
+            <label for="Vīrietis">Vīrietis</label>
+            <br>
+            <input type="radio" name="Sieviete" id="dzimums" required>
+            <label for="Sieviete">Sieviete</label>
+            <br>
+            <br>
+            <label for="Dzimšanas datums">Dzimšanas datums</label>
+            <input type="date" name="Vīrietis" id="dzimums" required>
+            <br>
+            <label for="Adrese">
+                <h4>Adrese</h4>
+            </label>
+            <br>
+            <label for="city-select">Jūsu pilsēta</label>
+            <select name="city" id="city-select">
+                <option value="riga">Riga</option>
+                <option value="jelgava">Jelgava</option>
+                </select>
+                </optgroup>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><p style="background-color:yellow;">Jūsu Hobbies</p></legend>
+             <br>Jūs varat izvēlēties jebkuru hobiju skaitu
+             <br>
+             <input type="checkbox" name="Celojumi" id="Celojumi" required>
+             <label for="Celojumi">Celojumi</label>
+             <input type="checkbox" name="Programmešana" id="Programmešana" required>
+             <label for="Programmešana">Programmešana</label>
+             <br>
+             <input type="checkbox" name="Zīmēt" id="Zīmēt" required>
+             <label for="Zīmēt">Zīmēt</label>
+             <input type="checkbox" name="Spēlēt mūzikas instrumentus" id="Spēlēt mūzikas instrumentus" required>
+             <label for="Spēlēt mūzikas instrumentus">Spēlēt mūzikas instrumentus</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><p style="background-color:yellow;">Diētas ierobežojumi</p></legend>
+            <br>Jūs varat atzīmēt vairākus lodziņus <br>
+            <input type="checkbox" name="Nav" id="Nav" required>
+            <label for="Nav">Nav</label>
+            <input type="checkbox" name="Bezglutēna" id="Bezglutēna" required>
+            <label for="Bezglutēna">Bezglutēna</label>
+            <input type="checkbox" name="Bezlaktozes" id="Bezlaktozes" required>
+            <label for="Bezlaktozes">Bezlaktozes</label>
+            <input type="checkbox" name="Veģetārietis" id="Veģetrārietis" required>
+            <label for="Veģetārietis">Veģetārietis</label>
+            <input type="checkbox" name="Vegāns" id="Vegāns" required>
+            <label for="Vegāns">Vegāns</label>
+                       
+             
+        </fieldset>
+            <button type="submit">Sūtīt</button>
+       
+</body> 
+</html>

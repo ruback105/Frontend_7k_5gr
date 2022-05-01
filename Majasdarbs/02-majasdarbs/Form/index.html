@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Reģistrācijas forma</title>
+</head>
+    <h2><b>Reģistrācijas forma</b></h2>
+    <form action="" method="get">
+        <fieldset>
+            <label for="name">Ievietot vārdu:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="name">Ievietot paroli:</label>
+            <input type="password" name="" id="" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend style="background-color:yellow;">Informācija par sevi</legend><br>
+                <label for="name"><b>Dzimums</b></label><br>
+                <br>
+                <input type="radio" name="Dzimums" id="vīrietis">
+                <label for="name">vīrietis</label><br>
+                <input type="radio" name="Dzimums" id="sieviete">
+                <label for="name">sieviete</label><br>
+                <br>
+                <label for="name">Dzimšanas datums</label>
+                <input type="date" name="name" id=""><br>
+                <br>
+                <legend><b>Adrese</b></legend><br>
+                <label for="city-select">Jūsu pilsēta</label>
+                <select> name="city" id="city-select"
+                    <option value="riga">Rīga</option>
+                    <option value="jelgava">Jelgava</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend style="background-color:yellow;">Jūsu hobiji</legend>
+            <legend>Jūs varat izvēlēties jebkuru hobiju skaitu</legend>
+                    <input type="checkbox" name="" id="">
+                    <label for="name">Ceļojumi<label>
+                    <input type="checkbox" name="" id="">
+                    <label for="name">Programmēšana<label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="name">Zīmēt<label>
+                    <input type="checkbox" name="" id="">
+                    <label for="name">Spēlēt mūzikas instrumentu<label>
+        </fieldset><br>
+        <fieldset>
+        <legend style="background-color:yellow;">Atzīmē, kā Tu šodien jūties</legend><br>
+            <select id="sajutas" name="sajutas" size="6">
+              <option value="lieliski">Lieliski </option>
+              <option value="loti labi">Ļoti labi </option>
+              <option value="labi">Labi </option>
+              <option value="normali">Normāli </option>
+              <option value="normali">Slikti </option>
+              <option value="normali">Ļoti slikti </option>
+            </select><br>
+            <br>
+        </fieldset><br>
+        <button type="submit">Sūtīt</button>
+    </form>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(142, 138, 138);
+    width: 1130px;
+    padding: 80px;
+
+}
+#left-side {
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 1763px;
+    float: left;
+    padding: 20px;
+}
+#profile-image {
+    border-radius: 80%;
+}
+#aboutme {
+    color: black;
+}
+
+#title {
+    background-color: rgb(128, 136, 133);
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+#right-side {
+    background-color: rgb(218, 218, 218);
+    color: black;
+    float: right;
+    width: 800px;
+    padding: 20px
+
+}
+#content {
+    background-color: white;
+    padding: 20px;
+ }

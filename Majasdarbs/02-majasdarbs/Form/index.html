@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+  </head>
+
+  <body>
+      <h2>Reģistrācijas forma</h2>
+        <fieldset>
+            <label for="name">Ievietot vārdu:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="password">Ievietot paroli:</label> 
+            <input type="password" name="password" id="password" required>
+        </fieldset>
+     <br>
+        <fieldset>
+          <legend> <p style=background-color:yellow>Informācija par sevi</p> </legend>
+          <label for="dzimums">
+         <h4>Dzimums</h4>
+         </label> 
+
+         <input type="radio" name="Vīrietis" id="dzimums" required>
+         <label for="Vīrietis">Vīrietis</label>
+         <br>
+         <input type="radio" name="Sieviete" id="dzimums" required>
+         <label for="Sieviete">Sieviete</label>
+        <br>
+        <br>
+        <label for="Dzimšanas datums">Dzimšanas datums</label>
+        <input type="date" name="Vīrietis" id="dzimums" required>
+         <br>
+         <label for="Adrese">
+             <H4>Adrese</H4>
+        </label>
+        <br>
+        <label for="city-select">Pilseta</label>
+          <select name="city" id="city-select">
+          <option value="Rīga">Rīga</option>
+          <option value="Rēzekne">Rēzekne</option>
+        </select>
+      </optable>
+</fieldset>
+  <br>
+  <Fieldset>
+    <Legend><p style="background-color: yellow;">Jūsu hobiji</p></Legend>
+    Jūs varat izvēlēties jebkuru hobiju skaitu
+<br>
+    <input type="checkbox" name="Ceļojumi" id="Ceļojumi" required>
+    <label for="Ceļojumi">Ceļojumi</label>
+    <input type="checkbox" name="Sports" id="Sports" required>
+    <label for="Sports">Sports</label>
+    <br>
+    <input type="checkbox" name="Adīšana" id="Adīšana" required>
+    <label for="Adīšana">Adīšana</label>
+    <input type="checkbox" name="Gatavošana" id="Gatavošana" required>
+    <label for="Gatavošana">Gatavošana</label>
+  </Fieldset>
+  <br>
+  <Fieldset>
+    <legend><p style="background-color: yellow;">Strong Elements</p></legend>
+    <p>Normāls teksts</p>
+    <p><strong>Strong teksts</strong></p>
+  </Fieldset>
+  <br>
+<button type="submit">Sūtīt</button>
+</body>
+</html>

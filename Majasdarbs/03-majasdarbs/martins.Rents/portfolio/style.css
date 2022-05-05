@@ -1,3 +1,7 @@
+body {
+    font-family: lucida sans;
+}
+
 .navBar {
     display: flex;
     justify-content: flex-start;
@@ -31,9 +35,7 @@ a:visited {
     color: rgb(53, 41, 41);
 }
 
-body {
-    font-family: lucida sans;
-}
+
 
 #education {
     display: flex;

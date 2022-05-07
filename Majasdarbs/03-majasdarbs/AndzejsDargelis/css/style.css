@@ -19,3 +19,13 @@ flex-wrap: wrap;align-content: flex-end;justify-content: space-evenly;align-item
   padding: 20px;
   font-size: 30px;
 }
+
+.flex-container > div:nth-child(1){
+  height: 95px;
+}
+.flex-container > div:nth-child(2){
+  height: 45px;
+}
+.flex-container > div:nth-child(3){
+  height: 300px;
+}

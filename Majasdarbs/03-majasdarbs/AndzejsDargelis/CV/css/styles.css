@@ -16,6 +16,7 @@ nav{
     background: rgb(29, 167, 231, 0.8);
     height: 80px;
     width: 100%;
+    column-count: 2;
 }
 
 label.logo{
@@ -54,7 +55,7 @@ a.active,a:hover{
     font-size: 30px;
     color: rgb(0, 0, 0);
     float: right;
-    line-height: 80px;
+    line-height: 60px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -108,15 +109,15 @@ a.active,a:hover{
 }   
 
 main{
+    column-count: 2;
     background-image:linear-gradient(rgba(29, 167, 231, 0.8), transparent);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
    
     
 }
-
 
 .main{
     display: flex;
@@ -129,3 +130,16 @@ main{
     padding: 30px 10%;
     height: 25vh;
 }
+
+#contactme .buttonstyled {
+    background-color: rgba(29, 167, 231, 0.8);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

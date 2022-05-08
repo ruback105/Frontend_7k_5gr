@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+nav{
+    background: rgb(75, 209, 233);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;  
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.dropdown{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .dropdown{
+        display: block;}
+    ul{
+        position: fixed;
+        width:100%;
+        height: 80vh;
+        background: rgb(29, 167, 231, 0.8);
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-family: 20px;
+
+    }
+
+    a:hover,a.active{
+        background: none;
+        color:rgb(255, 255, 255);
+    }
+    #toggle:checked ~ ul{
+        left:0;
+    }
+}   
+
+main{
+    background-image:linear-gradient(rgba(29, 167, 231, 0.8), transparent);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+   
+    
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    padding: 30px 10%;
+    height: 25vh;
+}

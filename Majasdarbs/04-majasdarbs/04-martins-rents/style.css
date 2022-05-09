@@ -1,0 +1,17 @@
+.col-4 {
+    width: 33.33%;
+}
+#col1 {
+    background-color: brown;
+    height: 50px;
+}
+
+#col2 {
+    background-color: rgb(251, 255, 0);
+    height: 50px;
+}
+
+#col3 {
+    background-color: rgb(0, 255, 98);
+    height: 50px;
+}

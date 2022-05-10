@@ -1,0 +1,22 @@
+@media screen and (max-width: 578px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;    
+        height: auto;  
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+    
+    #education {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .paKr {
+        padding-bottom: 15px;
+    }
+
+    .bilde-2 {
+        source media="(min-width:1200px)"
+    }

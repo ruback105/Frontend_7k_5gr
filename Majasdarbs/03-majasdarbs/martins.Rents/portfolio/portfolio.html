@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
     <style>
         section {
             padding: 50px;
@@ -31,11 +32,13 @@
         <!-- ABOUT ME -->
         <section id="aboutme">
             <img class="logo" src="instagram.jpg" alt="profileImg">
-            <address>
+            <address class="address">
                 <h1>Hi, I’m Matt | Frontend developer</h1>
-                <a href="tel:+37128210311">+371 22334455</a><br>
-                <a href="mailto:name.surname@gmail.com">matt@gmail.com</a><br>
-                <a href="#contactme">contact me</a>
+                <div class="contact">
+                    <a href="tel:+37128210311">+371 22334455</a><br>
+                    <a href="mailto:name.surname@gmail.com">matt@gmail.com</a><br>
+                    <a href="#contactme">contact me</a>
+                </div>
             </address>
         </section>
         <!-- /ABOUT ME -->
@@ -59,7 +62,7 @@
                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, corporis?</li>
                 <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam odio facere cumque.</li>
             </ul>
-
+                <hr>
             <h3>Interested in collaborating or investing?</h3>
             <em>I’m always open to discussing product design work or partnership opportunities.</em>
 
@@ -78,7 +81,7 @@
             </div>
 
             <div class="paLa">
-                <img src="developer.png" alt="developer" width="300" height="250">
+                <img class="bilde-2" src="developer.png" alt="developer" width="300" height="250">
                 <h2>Front-end Developer</h2>
             <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</em></p>
             <p>Languages I speak:<em>HTML, Pug, Slim, CSS, Sass, Less</em></p>
@@ -88,7 +91,7 @@
 
         <!-- SKILLS -->
         <section id="skills">
-            <h2>Skills</h2>
+            <h2><img src="icon.svg" width="50" height="50">Skills</h2>
             <b>In the everyday work I'm using the following skills and technologies:</b>
             <ul>
                 <li>HTML5</li>
@@ -156,6 +159,14 @@
         </section>
         <!-- LANGUAGES -->
 
+        <!-- Pictures -->
+
+        <picture class="pictures">
+            <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+            <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+            <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+          </picture>
+          <br>
         <hr>
         <!-- CONTACT FORM -->
         <section id="contactme">

@@ -11,10 +11,19 @@ p{font-family: Thin 100;
 }
 
 html{
-    font-size: 10px;
+    font-size: 16px;
     font-family: Thin 100;
 }
 .nav{display: flex; justify-content: space-around};
 
 
+
+@media only screen and (max-width:600px) {
+    body{
+        background-color: red;
+    }
+.nav{
+flex-wrap:wrap;
+}
+}
 

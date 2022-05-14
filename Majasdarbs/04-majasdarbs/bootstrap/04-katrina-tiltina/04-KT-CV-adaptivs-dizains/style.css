@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-header{
+    background: rgb(60, 22, 66);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+li{
+    list-style: none;
+    font-size: 2rem;
+    
+}
+
+.list-style li{
+        margin-bottom: 1rem;
+        background: url(./icons/redo-arrow-1_icon-icons.com_56892.svg) no-repeat left top;
+        padding: 0px 0 3px 35px;
+}
+
+.nav{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0;   
+}
+
+.logo{
+    flex: 1 1 40px;
+    color: aliceblue;
+    font-size: 3rem; 
+    text-transform: uppercase;
+
+}
+
+.nav-links{
+    list-style: none;
+    flex: 2 1 40px;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+a.active{
+    color:rgb(175, 252, 65);
+}
+
+a:hover,a.active{
+    background: none;
+    color:rgb(175, 252, 65);
+    transition: .5s;
+}
+
+p{
+    font-size: 2rem;
+}
+/*main part starts here*/
+
+main{
+    height: 85vh;
+    background-image:linear-gradient(rgba(60, 22, 66,0.8), transparent), url("./img/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.main-note{
+    margin-top: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.main-text{
+    font-size: 3rem;
+}
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: rgb(60, 22, 66);
+    padding: 9px 50px;
+    background-color: rgba(175, 252, 65);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 30px; 
+}
+
+button:hover{
+    background-color: rgba(8, 99, 117,0.8);
+    color: rgb(175, 252, 65);
+    
+}
+
+/*second part starts here*/
+.benefits-head{
+    font-family: "Montserrat", sans-serif;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(60, 22, 66);
+}
+
+.benefits-head h3{
+    padding: 1rem;
+    font-size: 2rem;
+    font-family:  sans-serif;
+    font-weight: lighter;
+    
+}
+.benefits-head h2{
+    font-family: "Montserrat", sans-serif;
+    padding: 1rem;
+    font-size: 2.8rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+/*card section start here*/
+
+.cards{
+    width:90%;
+    margin:auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    background-color: white;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5), 0px 20px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.cards img{
+    max-width: 15%;
+    margin: 2rem;
+    padding: 0 0.5rem;
+    
+    
+}
+
+.card h4{
+    padding: 3rem;
+}
+
+.card-icon{
+    background: rgb(8, 99, 117);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/*article starts here*/
+
+
+.article {
+    padding:2em 10%;
+    margin: auto;
+    display:inline-block;
+    
+    color:rgb(60, 22, 66);
+    font-family: sans-serif;
+  }
+
+.article h3{
+    color: rgb(8, 99, 117);
+}
+
+    .aTitleArea {
+      padding: 2em 0;
+      margin-bottom: 1em;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+      .aTitle {
+        color:rgb(60, 22, 66);
+        font-size: 2.8rem;
+        font-family: "Montserrat", sans-serif;
+      }
+  
+        .aTitle span{
+          display: inline-block;
+          font-size: 1em;
+          position: relative;
+  
+        }
+        .aTitle span:after, .aTitle span:before{
+          content:"";
+          position: absolute;
+          border-bottom:3px solid;
+          width:4em;
+          margin:0 1.5em;
+          bottom:.5em;
+        }
+        .aTitle span:before{
+          right:100%;
+        }
+        .aTitle span:after {
+          left:100%;
+        }
+
+  
+    .aContent {
+        font-size: 2rem;
+        
+    }
+    em{
+        color:lightgrey;
+    }
+  
+   /*project section stats here*/
+
+   .projects {
+    width: 90%;
+    margin: auto;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .travelly,
+  .elena {
+    flex: 1 1 40rem;
+  }
+
+.elena h2, .travelly h2{
+    padding: 2rem;
+}
+  
+
+
+   /*contact section starts here*/
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.form-wrapper,.about-wrapper{
+    text-align: center;
+    padding: 5rem;
+    margin: 80px;
+    
+    
+}
+
+.about-wrapper{
+   flex: 1 2 40px;
+    border-left: 3px solid rgb(60, 22, 66);;
+    
+}
+
+.about-wrapper header img{
+    width: 200px;
+    margin: 10px;
+}
+
+.about-wrapper header h2{
+    margin: 1rem;
+}
+
+.form-wrapper{
+    background-image:linear-gradient(rgba(60, 22, 66,0.5), transparent), url("img/3.png");
+    background-size: cover;
+    
+    color: aliceblue;
+    border-radius: 20px;
+    flex: 1 1 40px;
+    
+}
+
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,.email-form, .text-form{
+    padding: 2rem;
+    font-size: 2rem;
+    
+}
+
+.a-contact{
+    color: black;
+    font-size: 1.3rem;
+}
+
+
+   /*footer section starts here*/
+   footer{
+    color: white;
+    background:rgb(60, 22, 66);
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width:90%;
+    margin:auto;
+    align-items: center;
+    min-height: 10vh;
+    
+}
+
+footer h5{
+    flex: 1 1 40rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+  
+@media screen and (max-width: 842px) {
+    .burger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+      .burger span {
+        padding: 0.2rem 2rem;
+        background: white;
+        margin: 0.5rem 0rem;
+        display: block;
+        transition: all 0.5s ease;
+      }
+      .nav-links a {
+        color: white;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        
+      }
+      .nav-links {
+        background: rgb(8, 99, 117);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1s ease;
+      }
+    
+      .nav-open {
+        transform: translateX(-100%);
+      }
+    
+      .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
+        background: white;
+      }
+      .toggle .line2 {
+        opacity: 0;
+      }
+      .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: white;
+      }
+
+      .about-wrapper{
+        border-left: none;   
+     }
+
+     .elena img, .travelly img{
+        width: 380px;
+     }
+   
+    .form-wrapper, .about-wrapper{
+        margin: 10px 40px;
+    }
+   
+
+     .aTitle span:after, .aTitle span:before{
+        display: none;
+    }
+}

@@ -1,0 +1,34 @@
+body {
+   /* background-image: url("./foto cv/sosiska.jpg")*/
+
+}
+
+h1{
+    color: wheat;
+    margin-left: 20px;
+}
+h2{
+    color: wheat;
+    margin-left: 20px;
+}
+h3{
+    color: wheat;
+    margin-left: 20px;
+}
+h4{
+    color: wheat;
+    margin-left: 20px;
+}
+
+p{font-family: Thin 100;
+}
+
+html{
+    font-size: 16px;
+    font-family: Thin 100;
+}
+.nav{display: flex; justify-content: space-around}
+
+
+
+

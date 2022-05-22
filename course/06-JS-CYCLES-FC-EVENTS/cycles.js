@@ -45,7 +45,7 @@ const emails = [
 let formattedEmails = [];
 
 for (let i = 0; i < emails.length; i++) {
-  formattedEmails.push(emails[i].toLocaleLowerCase().trim());
+  formattedEmails.push(emails[i].trim().toLocaleLowerCase());
 }
 
 console.log(formattedEmails);

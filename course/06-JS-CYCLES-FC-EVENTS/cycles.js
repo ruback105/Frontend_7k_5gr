@@ -41,9 +41,25 @@ const emails = [
   "  hello4@woRld.com  ",
 ];
 
-const formattedEmails = [];
+// For cycle example
+let formattedEmails = [];
 
-// const firstEmail = emails[0].toLocaleLowerCase().trim();
-// formattedEmails.push(firstEmail);
+for (let i = 0; i < emails.length; i++) {
+  formattedEmails.push(emails[i].trim().toLocaleLowerCase());
+}
 
-console.log(formattedEmails); //
+console.log(formattedEmails);
+
+// Foreach cycle example
+formattedEmails = [];
+
+emails.forEach((email) => {
+  formattedEmails.push(email.trim().toLocaleLowerCase());
+});
+
+console.log(formattedEmails);
+
+// Map cycle example
+const returnValue = emails.map((email) => email.toLocaleLowerCase().trim());
+
+console.log(returnValue);

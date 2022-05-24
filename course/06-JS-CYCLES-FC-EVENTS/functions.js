@@ -61,13 +61,25 @@
 
 // izveidot reizināšanas funkciju ar return
 
+// const multiply = (param1, param2) => {
+//   return param1 * param2;
+// };
+
+// console.log(multiply(2, 10));
+
 /*  ---------------  */
 
-// const nameArray = ["Vards", "2 Vards", "Uzvards"];
-// let name = "";
+const nameArray = ["Vards", "2 Vards", "Uzvards", "Test", "Help"];
+let name = "";
 
 // izveidot funkciju, kas apvieno 2 vardus kopā
+const concatStrings = (firstString, secondsString) => {
+  return `${firstString} ${secondsString}`;
+};
 
 // iterēties cauri masīvam, lai apvienotu visus vārdus
+nameArray.forEach((namePart) => {
+  name = concatStrings(name, namePart);
+});
 
-// console.log(name); // "Vards 2 Vards Uzvards"
+console.log(name); // "Vards 2 Vards Uzvards"

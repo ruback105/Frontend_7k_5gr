@@ -20,7 +20,7 @@ const VardsUzvards = {
         ],
     skills: [
         "Cut mushroms",
-        "sales emty botles"
+        "sales empty botles"
     ],
             }
     };

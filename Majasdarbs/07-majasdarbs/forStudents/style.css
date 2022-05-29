@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .done {
   color: red;
   text-decoration: line-through;
-}
-
-ul {
-  list-style: none;
 }
 
 .container {

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+nav{
+    background: rgb(51, 33, 188);
+    height: 80px;
+    width: 100%;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: rgb(158, 177, 7);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    color: rgb(175, 252, 65);
+    transition: .5s;
+}
+
+.burger{
+    font-size: 30px;
+    color: rgb(75, 187, 187);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .burger{
+        display: block;}
+    ul{
+        position: fixed;
+        width:100%;
+        height: 80vh;
+        background: rgb(8, 99, 117);
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-family: 20px;
+
+    }
+
+    a:hover,a.active{
+        background: none;
+        color:rgb(175, 252, 65);
+    }
+    #toggle:checked ~ ul{
+        left:0;
+    }
+}   
+
+/*main part starts here*/
+main{
+    background-image:linear-gradient(rgba(33, 53, 230, 0.8), transparent), url("./assets/PngItem_52405.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+   
+    
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    padding: 30px 10%;
+    height: 70vh;
+}
+
+
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: rgb(60, 22, 66);
+    padding: 9px 50px;
+    background-color: rgba(175, 252, 65);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 30px;
+    
+}
+
+button:hover{
+    background-color: rgba(8, 99, 117,0.8);
+    color: rgb(175, 252, 65);
+    
+}

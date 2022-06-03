@@ -21,25 +21,25 @@ const darbaDiena = "Otrdiena";
 switch (darbaDiena) {
   case "Pirmdiena":
     console.log("1");
-    return;
+    break;
   case "Otrdiena":
     console.log("2");
-    return;
+    break;
   case "Trešdiena":
     console.log("3");
-    return;
+    break;
   case "Ceturtdiena":
     console.log("4");
-    return;
+    break;
   case "Piektdiena":
     console.log("5");
-    return;
+    break;
   case "Sestdiena":
     console.log("6");
-    return;
+    break;
   case "Svētdiena":
     console.log("7");
-    return;
+    break;
   default:
-    return;
+    break;
 }

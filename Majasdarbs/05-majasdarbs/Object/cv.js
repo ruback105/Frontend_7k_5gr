@@ -25,3 +25,8 @@ const cilveks = {
 
 console.log("Person full name:", cilveks.firstName + cilveks.lastName); 
 console.log(`Age of ${cilveks.firstName} ${cilveks.lastName}:`, cilveks.age);
+const VardsUzvards = {
+  name: "Arturs",
+  surname: "Puško",
+  hobbies: ["sports"],
+};

@@ -29,6 +29,31 @@ Number({})              //NaN
 Number([])              //0
 Number([1])             //1
 Number([1, 2])          //NaN
+String(-12.3)       
+String(null)         
+String(undefined)       
+String(true)          
+String(false)        
+String(function () {})  // 'function () {}'
+String({})             
+String({ key: 42 })     
+String([])              
+String([1, 2])          
+
+
+Number("123")        // 123   
+Number("123.4")        
+Number("123,4")         
+Number("")              
+Number(null)            
+Number(undefined)       
+Number(true)            
+Number(false)           
+Number(function () {})  // NaN
+Number({})              
+Number([])              
+Number([1])             
+Number([1, 2])          
 
 
 Boolean("")   //false          

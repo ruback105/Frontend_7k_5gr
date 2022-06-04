@@ -13,6 +13,10 @@ ul {
   text-decoration: line-through;
 }
 
+.remove {
+  text-decoration: none;
+}
+
 .container {
   max-width: 600px;
   padding: 20px 0;
@@ -42,9 +46,6 @@ ul > li {
   border: 1px solid #000;
   border-radius: 5px;
   margin: 5px 0;
-}
-
-li > div {
   padding: 10px;
   display: flex;
   justify-content: space-between;

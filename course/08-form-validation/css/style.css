@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form > div {
+  margin-top: 5px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 7px 8px;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 7px 8px;
+  background: #dede30;
+  border-radius: 5px;
+  border: 2px solid #dede30;
+  cursor: pointer;
+}
+
+p.error {
+  position: absolute;
+  bottom: 0;
+  color: red;
+  font-size: 12px;
+  left: 4px;
+}
+
+/* :valid pseudo class */
+/* input:valid {
+  border: 2px solid #71a901;
+}
+input:valid:focus {
+  box-shadow: 0 0 4px #71a901;
+} */
+
+/* :invalid pseudo class */
+/* input:invalid {
+  border: 2px solid red;
+}
+input:focus:invalid {
+  box-shadow: 0 0 4px red;
+} */
+
+input.valid {
+  border: 2px solid #71a901;
+}
+input.valid:focus {
+  box-shadow: 0 0 4px #71a901;
+}
+
+input.invalid {
+  border: 2px solid red;
+}
+input.invalid:focus {
+  box-shadow: 0 0 4px red;
+}

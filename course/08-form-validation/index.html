@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- html validate/novalidate -->
+      <form autocomplete="off" novalidate>
+        <!-- required validation -->
+        <!-- min/max length -->
+        <div>
+          <label for="username">Username</label>
+          <!-- <input
+            type="text"
+            name="username"
+            minlength="5"
+            maxlength="20"
+            required
+            id="username"
+          /> -->
+          <input type="text" name="username" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <!-- pattern validation (regex) -->
+          <!-- <input
+            type="email"
+            name="email"
+            pattern=".+@gmail\.com"
+            required
+            id="email"
+          /> -->
+          <input type="text" name="email" />
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+          <!-- min/max (number input) -->
+          <!-- <input type="number" name="age" min="16" max="99" required id="age" /> -->
+          <input type="number" name="age" />
+        </div>
+
+        <button type="submit" id="submit-button">Submit form</button>
+      </form>
+    </div>
+
+    <script src="./js/validation.js"></script>
+  </body>
+</html>

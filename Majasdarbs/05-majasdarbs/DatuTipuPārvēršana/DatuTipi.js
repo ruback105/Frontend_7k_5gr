@@ -9,14 +9,14 @@ String(null)
 String(undefined)       
 String(true)          
 String(false)        
-String(function () {})  
+String(function () {})  // 'function () {}'
 String({})             
 String({ key: 42 })     
 String([])              
 String([1, 2])          
 
 
-Number("123")           
+Number("123")        // 123   
 Number("123.4")        
 Number("123,4")         
 Number("")              
@@ -24,7 +24,7 @@ Number(null)
 Number(undefined)       
 Number(true)            
 Number(false)           
-Number(function () {})  
+Number(function () {})  // NaN
 Number({})              
 Number([])              
 Number([1])             

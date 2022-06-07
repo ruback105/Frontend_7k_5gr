@@ -9,7 +9,7 @@ ul {
 }
 
 .done {
-  color: red;
+  color: rgb(0, 255, 72);
   text-decoration: line-through;
 }
 
@@ -31,7 +31,7 @@ ul {
 }
 
 .taskAdder > button {
-  background-color: blueviolet;
+  background-color: rgb(153, 226, 43);
   border-radius: 5px;
   border: none;
   padding: 10px 20px;
@@ -39,7 +39,7 @@ ul {
 }
 
 ul > li {
-  border: 1px solid #000;
+  border: 1px solid rgb(48, 44, 44);
   border-radius: 5px;
   margin: 5px 0;
 }

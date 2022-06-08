@@ -1,0 +1,80 @@
+8 majasdarbs
+
+Mums nepicišams pievinot validacijas nosacijumi katram no laukam
+
+    Validacijas nosacijumi:
+    0 - Visiem laukiem jabut japievino required atributs
+    
+    1 laukam "Teksta laukam"
+        - japarbaudat lai vertiba butu pieškirta  
+        - pievienot atbilstošo ievadlauka tipu
+
+    2 laukam "Epasts lauks"  
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot atbilstošo patternu
+            -- nepicišams parbaudit lai mumu vertiba satur "@" un gmail.com beigas
+            -- .+@gmail\.com
+        - pievinot korektu kļudas paziņojumu
+
+    3 laukam "Teksta lauks ar Min un Max garumu"
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot atbilstošo parbaudi par simbolu skaitļu
+            -- min garums 5 simboli
+            -- max garums 10 simboli
+        - pievinot korektu kļudas paziņojumu
+
+    4 laukam "Parole 1"
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot atbilstošo paterni
+            -- jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars
+            -- ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+        - pievinot korektu kļudas paziņojumu
+
+    5 laukam "Parole 2"
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot atbilstošo paterni
+            -- jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars
+            -- ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+            -- min garums 8 simboli
+        - pievinot korektu kļudas paziņojumu
+
+    6 laukam "Nedeļa"
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot min max nedeļas robežas vertibas
+            -- no 2022-W18
+            -- lid 2022-W26
+        - pievinot korektu kļudas paziņojumu
+
+    7 laukam "Laiks"
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot min max laiku robežas vertibas
+            -- no 9:00
+            -- lid 18:00
+        - pievinot korektu kļudas paziņojumu
+
+    8 laukam "Zip un Valsts"
+        - pievienot atbilstošo ievadlauka tipu
+        - pievienot atbilstošo ievadlauka id
+        - pievienot vel 3 valsti
+            -- script.js pievino validacijas opcijas priekš karta no valstiem
+        - pievinot korektu kļudas paziņojumu
+
+    9 Pievinot funkciju printValues
+        - izvada vertibas formas vertibas uz ekrana
+            -- izveidtot tukšu masivu kura saglabam vertibas
+            -- izmantojot getElementsByTagName('input') dabut visus ievadlaukus
+            -- ar for ciklu priekš katra no vertibam var key in inputs
+            -- dabujam vertibas inputs[key].value
+            -- ja value eksiste  
+            -- pievinojam vertibu masiva .push(value);
+            -- izvadam masivu vertibas uz ekrana alert();
+
+
+Ši dokumentacija var Jums palidzet!
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Constraint_validation
+            
+
+    
+
+
+        

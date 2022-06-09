@@ -1,0 +1,22 @@
+@media screen and (min-width: 480px) {
+    section#hero {
+    background-image: url("../media/photos/pexels-evie-shaffer-4004374.jpg");
+}
+}
+
+@media screen and (min-width: 768px) {
+    #header .nav-bar .nav-list .hamburger {
+        display: none
+    }
+    #header .nav-bar .nav-list > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+#services {
+    flex-direction: row;
+    flex-wrap: wrap;
+}

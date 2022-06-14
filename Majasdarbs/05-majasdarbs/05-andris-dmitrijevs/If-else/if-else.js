@@ -1,3 +1,5 @@
+const darbaDiena = "Pirmdiena";
+
 if (darbaDiena === 'Pirmdiena') {
     console.log('1');
 } else if (darbaDiena === 'Otrdiena') {

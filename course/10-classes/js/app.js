@@ -93,8 +93,82 @@
 
 // uztaisīt Animal klasi ar parametriem: dzīvnieks, name, age, weight
 
-// const cat = new Animal("cat", "Minka", 3, 7);
-// const dog = new Animal("dog", "Rekss", 5, 20);
+// class Animal {
+//   constructor(species, name, gender, age, weight) {
+//     this.species = species;
+//     this.name = name;
+//     this.gender = gender;
+//     this.age = age;
+//     this.weight = weight;
+//   }
+
+//   getInfo() {
+//     return `I'm owner of a ${this.species} named ${
+//       this.name
+//     }. ${this.getGender()} is ${this.age} years old with ${
+//       this.weight
+//     } kg weight`;
+//   }
+
+//   getGender() {
+//     return this.gender === "male" ? "He" : "She";
+//   }
+// }
+
+// const cat = new Animal("cat", "Minka", "female", 3, 7);
+// const dog = new Animal("dog", "Rekss", "male", 5, 20);
 
 // console.log(cat.getInfo());
 // console.log(dog.getInfo());
+
+class User {
+  constructor(role, name, email) {
+    this.role = role;
+    this.name = name;
+    this.email = email;
+
+    this.editPermissions = this.getEditPermission();
+  }
+
+  getInfo() {
+    return `${this.role} - ${this.name}`;
+  }
+
+  getEditPermission() {
+    if (this.role === "Admin" || this.role === "Moderator") {
+      return true;
+    }
+
+    return false;
+  }
+}
+
+class Basic extends User {
+  constructor(name, email, avatar) {
+    super("Basic", name, email);
+
+    this.avatar = avatar ?? "https://image-placeholder.com";
+  }
+
+  getCard() {
+    return `you have 10 products in your card`;
+  }
+
+  getAvatar() {
+    return this.avatar;
+  }
+
+  setAvatar(url) {
+    this.avatar = url;
+  }
+}
+
+class Guest extends Basic {
+  constructor() {
+    super("", "", "");
+  }
+}
+
+const newBasicUser = new Basic("Janis Briska", "janis@1a.lv");
+
+const newGuestUser = new Guest();

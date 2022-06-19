@@ -1,0 +1,47 @@
+.bg-orange-700 {
+  background-color: #d3931a;
+}
+
+.border-orange-700 {
+  border-color: #d3931a;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.rounded-md {
+  border-radius: 6px;
+}
+
+.my-5 {
+  margin: 5px 0;
+}
+
+.py-16 {
+  padding: 16px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-320 {
+  width: 320px;
+}
+
+.text-large {
+  font-size: 16px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-black {
+  color: #000;
+}

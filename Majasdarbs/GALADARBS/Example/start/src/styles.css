@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .card {
+    @apply p-4 rounded-md shadow-md cursor-pointer;
+  }
+
+  .modal {
+    @apply absolute inset-0 bg-slate-400/[.5];
+  }
+}

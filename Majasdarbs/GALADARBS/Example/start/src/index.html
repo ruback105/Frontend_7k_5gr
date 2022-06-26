@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <nav
+      class="
+        fixed
+        top-0
+        left-0
+        w-screen
+        flex
+        items-center
+        bg-zinc-400
+        h-16
+        space-x-2
+        px-2
+      "
+    >
+      <img src="../assets/logo.svg" alt="" class="w-12 h-12" />
+      <h3 class="font-bold text-lg text-red-700">
+        Make<span class="text-yellow-500">A</span>Beer
+      </h3>
+    </nav>
+
+    <section class="mt-16 border border-black m-4 p-4 flex flex-col">
+      <button
+        id="random"
+        class="
+          ml-auto
+          py-2
+          px-4
+          border border-yellow-500
+          rounded-md
+          font-bold
+          bg-yellow-500
+          text-red-700
+        "
+      >
+        Get Random
+      </button>
+
+      <div class="grid grid-cols-3 md:grid-cols-4 gap-4" id="card-grid"></div>
+    </section>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
